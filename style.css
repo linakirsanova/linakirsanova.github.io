@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+  background: black url("images/bg.jpg") center no-repeat;
+  background-size: cover;
+
+}
+body {
+  color: white;
+  font-family: "Courier New", Courier, Monaco, serif;
+  font-size: 12px;
+  line-height: 2.2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-links li {
+  padding-right: 5px;
+  display: inline;
+}
+
+.social-links a {
+  display: inline-block;
+  max-width: 100%;
+  width: 15px;
+  height: 15px;
+  opacity: 0.25;
+}
+
+.social-links img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: opacity 2s forwards;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.header {
+  margin-bottom: 70px;
+}
+
+.footer {
+  margin-top: 35px;
+}
+
+.navigation a:hover {
+  background: red;
+}
+
+.navigation a {
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+
+.social-links a:hover {
+  opacity: 1;
+}
+
+@media all and (orientation:landscape) {
+  body {
+    background: red;
+    }
+}
